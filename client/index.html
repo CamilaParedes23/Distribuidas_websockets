@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat en Tiempo Real - WebSocket</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>💬 Chat Distribuido</h1>
+        <div class="connection-status">
+          <span id="connectionStatus" class="status-disconnected"
+            >Desconectado</span
+          >
+          <span id="clientsCount" class="clients-count">Usuarios: 0</span>
+        </div>
+      </header>
+
+      <!-- Pantalla de inicio de sesión -->
+      <div id="loginScreen" class="login-screen">
+        <div class="login-form">
+          <h2>Únete al Chat</h2>
+          <input
+            type="text"
+            id="usernameInput"
+            placeholder="Ingresa tu nombre de usuario"
+            maxlength="20"
+          />
+          <button id="joinButton">Unirse al Chat</button>
+        </div>
+      </div>
+
+      <!-- Pantalla principal del chat -->
+      <div id="chatScreen" class="chat-screen hidden">
+        <div class="chat-container">
+          <div class="messages-container">
+            <div id="messagesArea" class="messages-area"></div>
+            <div id="typingIndicator" class="typing-indicator"></div>
+          </div>
+
+          <div class="input-container">
+            <input
+              type="text"
+              id="messageInput"
+              placeholder="Escribe tu mensaje..."
+              maxlength="500"
+            />
+            <button id="sendButton">📤 Enviar</button>
+            <button id="clearButton">🗑️ Limpiar</button>
+            <button id="disconnectButton">🚪 Salir</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Área de notificaciones -->
+      <div id="notifications" class="notifications"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

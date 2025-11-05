@@ -1,0 +1,26 @@
+{
+  "name": "chat-websocket-frontend",
+  "version": "1.0.0",
+  "description": "Cliente web para sistema de mensajería en tiempo real con WebSocket",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3001 -a 0.0.0.0 -o -c-1",
+    "dev": "npx live-server --port=3001 --host=0.0.0.0 --open=/index.html",
+    "build": "echo \"No build process needed for vanilla frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "websocket",
+    "chat",
+    "frontend",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  }
+}
