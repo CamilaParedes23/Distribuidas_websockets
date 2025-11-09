@@ -104,7 +104,7 @@ npm run dev
 
 ### 🌐 Acceso a la Aplicación
 
-- **Frontend**: `http://localhost:3000`
+- **Frontend**: `http://localhost:3001`
 - **Backend WebSocket**: `ws://localhost:8080`
 
 > **Nota**: El backend debe estar ejecutándose antes de usar el frontend.
@@ -147,14 +147,14 @@ npm run dev                   # Desarrollo con nodemon
 
 # Scripts del frontend (desde client/)
 cd client
-npm start                     # Servidor HTTP en puerto 3000
+npm start                     # Servidor HTTP en puerto 3001
 npm run dev                   # Desarrollo con live-reload
 ```
 
 #### Puertos y Servicios
 
 - **Backend WebSocket**: Puerto 8080 (`ws://localhost:8080`)
-- **Frontend HTTP**: Puerto 3000 (`http://localhost:3000`)
+- **Frontend HTTP**: Puerto 3001 (`http://localhost:3001`)
 
 ## 📚 Documentación Detallada
 
@@ -286,10 +286,10 @@ Ver [client/README.md](client/README.md) para:
 
 ### Problemas Comunes
 
-**❌ \"Error de conexión\"**
+**❌ "Error de conexión"**
 
 - Verificar que el servidor esté ejecutándose
-- Comprobar puertos 3000 (HTTP) y 8080 (WebSocket)
+- Comprobar puertos 3001 (HTTP) y 8080 (WebSocket)
 - Revisar firewall/antivirus
 
 **❌ \"No se pudo conectar al servidor\"**
@@ -307,7 +307,7 @@ Ver [client/README.md](client/README.md) para:
 ### Logs del Servidor
 
 ```bash
-🌐 Servidor HTTP ejecutándose en http://localhost:3000
+🌐 Servidor HTTP ejecutándose en http://localhost:3001
 🔌 Servidor WebSocket ejecutándose en ws://localhost:8080
 🔗 Nueva conexión: client_1 desde ::1
 💬 nombreUsuario: mensaje del usuario
@@ -319,7 +319,7 @@ Ver [client/README.md](client/README.md) para:
 ### Variables de Entorno
 
 ```bash
-PORT=3000          # Puerto del servidor HTTP
+PORT=3001          # Puerto del servidor HTTP
 WS_PORT=8080       # Puerto del servidor WebSocket
 ```
 
@@ -333,7 +333,7 @@ WS_PORT=8080       # Puerto del servidor WebSocket
 
 ### Estadísticas del Servidor
 
-Acceder a `http://localhost:3000/stats` para obtener:
+Acceder a `http://localhost:3001/stats` para obtener:
 
 ```json
 {
