@@ -351,8 +351,8 @@ console.log(`   - Protocolo: WebSocket`);
 console.log(`   - Modo: Backend independiente`);
 console.log(`🚀 Servidor listo para recibir conexiones...`);
 console.log(`\n📱 Para conectar otros dispositivos:`);
-console.log(`   Frontend: http://${localIP}:3000`);
-console.log(`   Backend:  ws://${localIP}:8080`);
+console.log(`   Frontend: http://${localIP}:3001`);
+console.log(`   Backend:  ws://${localIP}:${WS_PORT}`);
 
 // Manejo de cierre limpio
 process.on('SIGTERM', () => {
